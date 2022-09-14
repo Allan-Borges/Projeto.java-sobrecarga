@@ -17,10 +17,10 @@ public class Programa {
 		System.out.print("Entre com o nome: ");
 		String nome = sc.nextLine();		
 		System.out.print("Deseja fazer um deposito inicial(s/n)?");
-		char op = sc.next().charAt(0);
+		char opcao = sc.next().charAt(0);
 		double deposito = 0.0;
 		
-		if(op == 's') {
+		if(opcao == 's') {
 			System.out.print("Entre com o deposito inicial: ");
 			deposito = sc.nextDouble();
 			conta = new Conta(numero, nome, deposito);
